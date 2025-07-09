@@ -1,20 +1,24 @@
-# ANGSD-Final-Project
-Repository to store all aspects of ANGSD final project
+# RNA-Seq Analysis of Irinotecan Treatment in Cancer Cell Lines
 
-'Report ANGSD Final Project' contains the write-up of my final report 
+This project analyzes RNA-seq data to investigate transcriptional responses to Irinotecan treatment in cancer cell lines. The work was completed as part of a final project for an advanced genomics course using the **ANGSD pipeline**, **DESeq2**, and **GO term enrichment tools**.
 
-'Methods-ANGSD-Final-Project' contains the expanded version of my methods section (all source code included)
+## Objectives
+- Perform quality control on RNA-seq BAM files
+- Identify differentially expressed genes between vehicle- and Irinotecan-treated samples
+- Perform GO term enrichment to explore functional pathways impacted by treatment
 
-SUPPLEMENTARY INFORMATION: 
+## Methods Summary
+- **Quality Control**: BAMQC, QoRTs
+- **Read Counting & Differential Expression**: DESeq2
+- **GO Enrichment**: clusterProfiler + REVIGO
+- **Visualization**: TreeMaps, heatmaps, GO plots
 
-BAMQC Output files: 'BAMQC_Vehicle_Rep_1_report', 'BAMQC_Vehicle_Rep_2_report', 'BAMQC_Irinotecan_Rep_1_report', and 'BAMQC_Irinotecan_Rep_2_report'
+## Repository Contents
+- `Report ANGSD Final Project`: Final write-up of the project
+- `Methods-ANGSD-Final-Project`: Expanded methods section with full source code
+- `*.R`: R scripts for GO term enrichment analysis and visualization
+- `*.txt / *.RData`: Supplementary data and results
 
-Example QoRTs output file used to determine stradedness: 'QC_QoRTs_Irinotecan_Rep_1.summary'
-
-GO term enrichment analysis results for REVIGO: 'enrichGO_Final_Project.txt'
-
-DESeqDataSet generated: 'RNAseqIrinoectan.RData' 
-
-R code to generate Tree Maps: 'Revigo_CC_TreeMap.R', 'Revigo_BP_TreeMap.R','Revigo_MF_TreeMap.R'
-
-Complete list of enriched GO terms: 'Revigo_BP_Enriched_GOTerms.R', 'Revigo_CC_Enriched_GOTerms', 'Revigo_MF_Enriched_GOTerms'
+## Tools & Languages
+- R, DESeq2, clusterProfiler, REVIGO
+- QoRTs, BAMQC
